@@ -61,6 +61,7 @@ class PesquisasRecentesPage {
     }
 
     verificarSeApareceuOToast() {
+        cy.wait(1000)
         cy.contains('Nenhum documento encontrado.')
     }
 }
