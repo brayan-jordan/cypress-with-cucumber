@@ -1,4 +1,4 @@
-Feature: Mostrar Pesquisas Recentes do DOC-E
+Feature: Mostrar Pesquisas Recentes do DOC-E utilizando o novo Layout
 
     Scenario: Entrar na aplicação, setar as configurações 
         Given Acesso ao site da aplicação DOC-e 
