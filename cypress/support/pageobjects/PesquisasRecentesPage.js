@@ -12,7 +12,8 @@ class PesquisasRecentesPage {
 
     abreAsConfigurações() {
         cy.wait(1000)
-        // cy.xpath busca os elementos através do seu xpath, caso for buscar um elemento por ID utiliza o .get(.idDoElemento)
+        // cy.xpath busca os elementos através do seu xpath, porém também é possivel pegar de várias outras maneiras os elementos
+        // desejados por exemplo utilizando o cy.get('') com os parametros (.classname, @id=xxx)
         cy.xpath(pesquisasRecentesElements.botaoConfig()).click()
     }
 
