@@ -1,6 +1,6 @@
-Feature: Login site CWI
+Feature: Acessar os cursos da Alura
 
-    Scenario: Visualizar opção de recuperar senha esquecida
+    Scenario: Entrar no site e buscar os cursos de programação
         Given acesso o site da alura
         When acesso a pagina de matricula
         Then acesso a tela de cursos de programacao
