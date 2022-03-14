@@ -45,6 +45,10 @@ class PesquisasRecentesElements {
     primeiraOpcaoRecentSearchsNovoLayout = () => {
         return '//*[@id="cover"]/div/div[2]/div/div/div'
     }
+
+    toastNaoEncontrado = () => {
+        return '//*[@id="body"]/div[6]'
+    }
 }
 
 export default PesquisasRecentesElements;

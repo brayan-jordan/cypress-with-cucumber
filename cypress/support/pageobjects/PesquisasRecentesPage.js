@@ -54,6 +54,15 @@ class PesquisasRecentesPage {
         cy.wait(1000)
         cy.xpath(pesquisasRecentesElements.primeiraOpcaoRecentSearchsNovoLayout()).click()
     }
+
+    inserirIdInvalido() {
+        cy.wait(1000)
+        cy.xpath(pesquisasRecentesElements.inputOrdemProducaoMaterial()).type('998899889988{enter}')
+    }
+
+    verificarSeApareceuOToast() {
+        cy.contains('Nenhum documento encontrado.')
+    }
 }
 
 export default PesquisasRecentesPage;
