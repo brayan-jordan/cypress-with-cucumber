@@ -41,6 +41,10 @@ class PesquisasRecentesElements {
     primeiraOpcaoRecentSearchs = () => {
         return '//*[@id="body"]/div[1]/div[1]/div[1]/ul/li'
     }
+
+    primeiraOpcaoRecentSearchsNovoLayout = () => {
+        return '//*[@id="cover"]/div/div[2]/div/div/div'
+    }
 }
 
 export default PesquisasRecentesElements;
