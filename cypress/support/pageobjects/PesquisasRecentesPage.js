@@ -62,6 +62,8 @@ class PesquisasRecentesPage {
 
     verificarSeApareceuOToast() {
         cy.wait(1000)
+        // Contains vai procurar algum elemento na tela que contenha o texto
+        // especificado, caso nao encontre então o teste vai dar erro e alegar na hora do plano de testes
         cy.contains('Nenhum documento encontrado.')
     }
 }
