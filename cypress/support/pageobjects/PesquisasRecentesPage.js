@@ -3,6 +3,7 @@ const pesquisasRecentesElements = new PesquisasRecentesElements
 const url = Cypress.config("baseUrl")
 require('cypress-xpath')
 
+// Aqui contará tudo que será executado em determinado plano de teste e todas as funcionalidades do Cypress podem ser utilizadas
 class PesquisasRecentesPage {
     acessarSite() {
         cy.wait(1000)
@@ -11,6 +12,7 @@ class PesquisasRecentesPage {
 
     abreAsConfigurações() {
         cy.wait(1000)
+        // cy.xpath busca os elementos através do seu xpath, caso for buscar um elemento por ID utiliza o .get(.idDoElemento)
         cy.xpath(pesquisasRecentesElements.botaoConfig()).click()
     }
 
@@ -47,10 +49,6 @@ class PesquisasRecentesPage {
         cy.wait(1000)
         cy.xpath(pesquisasRecentesElements.primeiraOpcaoRecentSearchs()).click()
     }
-
-    /* selecionaPrimeiroDocumento() {
-        cy.xpath(pesquisasRecentesElements.primeiraOpcaoDocumento()).click()
-    } */
 }
 
 export default PesquisasRecentesPage;

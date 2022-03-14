@@ -1,4 +1,7 @@
 class PesquisasRecentesElements {
+    // Contém todos os elementos que vão precisar ser acessados por um plano de teste, pode ser utilizado somente o ID
+    // ao invés de passar o XPATH do elemento inteiro
+
     botaoConfig = () => { 
         return '//*[@id="body"]/nav/div/div[1]/a' 
     }

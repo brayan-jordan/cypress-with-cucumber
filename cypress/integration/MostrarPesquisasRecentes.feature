@@ -14,3 +14,8 @@ Feature: Mostrar Pesquisas Recentes do DOC-E
         Given Retornado a página inicial através do botão Home
         When Busco a primeira opção do pesquisa recente
         Then Seleciono um documento dos disponíveis
+
+    # Comandos do BDD (Behavior-driven development ou Desenvolvimento Orientado a Comportamento)
+        # Given -- Dado que
+        # When -- Quando
+        # Then -- Então 

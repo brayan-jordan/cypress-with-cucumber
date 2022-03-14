@@ -3,6 +3,9 @@
 import PesquisasRecentesPage from '../pageobjects/PesquisasRecentesPage'
 const pesquisasRecentesPage = new PesquisasRecentesPage
 
+
+// Instanciando os métodos do Cucumber e declarando a função que cada um precisa executar do Cypress para realizar
+// o teste e dar o mesmo como certo ou errado
 Given("Acesso ao site da aplicação DOC-e", () => {
     pesquisasRecentesPage.acessarSite()
 })
