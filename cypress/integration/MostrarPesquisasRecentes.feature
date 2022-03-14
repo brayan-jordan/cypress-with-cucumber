@@ -12,7 +12,7 @@ Feature: Mostrar Pesquisas Recentes do DOC-E
 
     Scenario: Retornar a home e tentar acessar um documento através da pesquisa recente
         Given Retornado a página inicial através do botão Home
-        When Busco a primeira opção do pesquisa recente
+        When Busco a primeira opção do pesquisa recente layout antigo
         Then Seleciono um documento dos disponíveis
 
     # Comandos do BDD (Behavior-driven development ou Desenvolvimento Orientado a Comportamento)
