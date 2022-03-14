@@ -15,7 +15,7 @@ When("Acesso as configurações da aplicação", () => {
 })
 
 Then("Muda as opções hide_recent_search e use_bluffton_layout para FALSE e confirma", () => {
-    pesquisasRecentesPage.editaAsFlagsParaFalse()
+    pesquisasRecentesPage.editarFlags(false, false)
 })
 
 Given("O campo input está vazio", () => {
@@ -34,8 +34,8 @@ Given("Retornado a página inicial através do botão Home", () => {
     pesquisasRecentesPage.voltaParaHome()
 })
 
-When("Busco a primeira opção do pesquisa recente", () => {
-    pesquisasRecentesPage.secionaPrimeiraOpcaoRecente()
+When("Busco a primeira opção do pesquisa recente layout antigo", () => {
+    pesquisasRecentesPage.secionaPrimeiraOpcaoRecenteLayoutAntigo()
 })
 
 Then("Seleciono um documento dos disponíveis", () => {
