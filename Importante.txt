@@ -1,0 +1,12 @@
+Link da documentação oficial do Cypress, contendo todas as funcionalidades e exemplos de utilização
+
+https://docs.cypress.io/api/commands/document#Arguments
+
+Criando uma interface de testes exemplo e explicando as funcionalidades mais comuns do Cypress
+
+https://cwi.com.br/blog/testes-automatizados-cypress-e-cucumber/
+
+Documentação oficial do Cypress-with-cucumber, explicando como integrar em uma aplicação de testes com Cypress 
+e quais suas principais funcionalidades
+
+https://www.npmjs.com/package/cypress-cucumber-preprocessor
