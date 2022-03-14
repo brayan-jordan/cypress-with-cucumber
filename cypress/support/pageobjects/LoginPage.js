@@ -2,7 +2,7 @@
 
 import LoginElements from '../elements/LoginElements'
 const loginElements = new LoginElements
-const url = Cypress.config("baseUrl")
+const url = 'https://alura.com.br'
 require('cypress-xpath')
 
 class LoginPage {
