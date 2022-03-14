@@ -16,12 +16,12 @@ class PesquisasRecentesPage {
         cy.xpath(pesquisasRecentesElements.botaoConfig()).click()
     }
 
-    editaAsFlagsParaFalse() {
+    editarFlags(arg1, arg2) {
         cy.wait(1000)
         cy.xpath(pesquisasRecentesElements.botaoEditarUseBlufftonLayout()).click()
-        cy.xpath(pesquisasRecentesElements.inputUseBlufftonLayour()).clear().type('false{enter}')
+        cy.xpath(pesquisasRecentesElements.inputUseBlufftonLayour()).clear().type(`${arg1}{enter}`)
         cy.xpath(pesquisasRecentesElements.botaoEditarHideRecentSearch()).click()
-        cy.xpath(pesquisasRecentesElements.inputHideRecentSearch()).clear().type('false{enter}')
+        cy.xpath(pesquisasRecentesElements.inputHideRecentSearch()).clear().type(`${arg2}{enter}`)
         cy.xpath(pesquisasRecentesElements.botaoFecharConfig()).click()
     }
 
@@ -45,9 +45,14 @@ class PesquisasRecentesPage {
         cy.xpath(pesquisasRecentesElements.botaoHome()).click()
     }
 
-    secionaPrimeiraOpcaoRecente() {
+    secionaPrimeiraOpcaoRecenteLayoutAntigo() {
         cy.wait(1000)
         cy.xpath(pesquisasRecentesElements.primeiraOpcaoRecentSearchs()).click()
+    }
+
+    selecionaPrimeiraOpcaoRecenteLayoutNovo() {
+        cy.wait(1000)
+        cy.xpath(pesquisasRecentesElements.primeiraOpcaoRecentSearchsNovoLayout()).click()
     }
 }
 
