@@ -10,3 +10,12 @@ Documentação oficial do Cypress-with-cucumber, explicando como integrar em uma
 e quais suas principais funcionalidades
 
 https://www.npmjs.com/package/cypress-cucumber-preprocessor
+
+Exemplo de um comando que pode ser muit útil .should verifica se o input selecionado está marcado
+Caso esteja vai executar a função usando o .then
+
+cy.get(':checkbox')
+  .should('be.selected')
+  .then(($option) => {
+    // $option is yielded
+})
